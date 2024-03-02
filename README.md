@@ -3,8 +3,7 @@
 Function Output Lock: kernel-console optimizer
 - You're viewing a locked-down site. Please close this tab!
 
-```
-html
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -38,4 +37,3 @@ html
     </script>
 </body>
 </html>
-```
