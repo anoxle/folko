@@ -2,7 +2,7 @@ Function Output Lock: kernel-console optimizer
 
 - You’re viewing a locked-down site. Please close this tab!
 
-```css
+```html
 <style>
 body {
     background-color: #222;
@@ -19,10 +19,14 @@ p {
 footer {
     margin-top: 20px;
     font-size: 14px;
+    color: #888;
 }
-
 </style>
 
 <footer>
-    &copy; 2002 - {currentyear} Folko™. All Rights Reserved.
+    &copy; 2002 - <span id="currentYear"></span> Folko™. All Rights Reserved.
 </footer>
+
+<script>
+document.getElementById("currentYear").innerHTML = new Date().getFullYear();
+</script>
