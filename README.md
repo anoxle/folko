@@ -2,7 +2,7 @@ Function Output Lock: kernel-console optimizer
 
 • You’re viewing a locked-down site. Please close this tab!
 
-```html
+```
 <style>
 body {
     background-color: #222;
