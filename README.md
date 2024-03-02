@@ -1,8 +1,3 @@
-# folko
-
-Function Output Lock: kernel-console optimizer
-- You're viewing a locked-down site. Please close this tab!
-
 ```html
 <!DOCTYPE html>
 <html>
@@ -22,7 +17,7 @@ Function Output Lock: kernel-console optimizer
             color: white;
             font-size: 12px;
         }
-    </style>
+    </style>a
 </head>
 <body>
     <h1># folko</h1>
