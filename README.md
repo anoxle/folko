@@ -30,3 +30,5 @@ footer {
 <script>
 document.getElementById("currentYear").innerHTML = new Date().getFullYear();
 </script>
+
+<img src="https://anoxle.github.io/folko/logo2.png" alt="Folko Logo" width="200">
