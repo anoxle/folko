@@ -25,3 +25,7 @@ footer {
 }
 
 </style>
+
+<footer>
+    &copy; 2002 - {currentyear} Folko™. All Rights Reserved.
+</footer>
