@@ -1,6 +1,6 @@
 Function Output Lock: kernel-console optimizer
 
-- You’re viewing a locked-down site. Please close this tab!
+• You’re viewing a locked-down site. Please close this tab!
 
 ```html
 <style>
