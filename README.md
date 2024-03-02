@@ -1,34 +1,44 @@
-Function Output Lock: kernel-console optimizer
-
-• You’re viewing a locked-down site. Please close this tab!
-
 ```
-<style>
-body {
-    background-color: #222;
-    color: #ddd;
-    font-family: 'Arial', sans-serif;
-    text-align: center;
-    padding: 20px;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Folko - Bloxstrap</title>
+    <link rel="icon" href="https://anoxle.github.io/hvh/logo.png" type="image/png">
 
-p {
-    font-size: 18px;
-}
+    <style>
+        body {
+            background-color: #222;
+            color: #ddd;
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
 
-footer {
-    margin-top: 20px;
-    font-size: 14px;
-    color: #888;
-}
-</style>
+        p {
+            font-size: 18px;
+        }
 
-<footer>
-    &copy; 2002 - <span id="currentYear"></span> Folko™. All Rights Reserved.
-</footer>
+        footer {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #888;
+        }
+    </style>
+</head>
 
-<script>
-document.getElementById("currentYear").innerHTML = new Date().getFullYear();
-</script>
+<body>
+    <img src="https://anoxle.github.io/folko/logo2.png" alt="Folko Logo" width="200">
 
-<img src="https://anoxle.github.io/folko/logo2.png" alt="Folko Logo" width="200">
+    <p>Function Output Lock: kernel-console optimizer</p>
+
+    <p>You’re viewing a locked-down site. Please close this tab!</p>
+
+    <footer>
+        &copy; 2002 - <span id="currentYear"></span> Folko™. All Rights Reserved.
+    </footer>
+
+    <script>
+        document.getElementById("currentYear").innerHTML = new Date().getFullYear();
+    </script>
+</body>
+</html>
