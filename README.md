@@ -1,4 +1,5 @@
-ERROR CODE: \n ```C:\Users\FolkoCloud> Site has been locked ```
+ERROR CODE:
+```C:\Users\FolkoCloud> Site has been locked ```
 
 
 <html lang="en">
