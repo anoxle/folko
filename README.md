@@ -1,4 +1,10 @@
-```html
+# folko
+
+Function Output Lock: kernel-console optimizer
+- You're viewing a locked-down site. Please close this tab!
+
+```
+html
 <!DOCTYPE html>
 <html>
 <head>
@@ -21,7 +27,7 @@
 </head>
 <body>
     <h1># folko</h1>
-    <p>Function Output Lock: kernel-console optimizer<br>- You're viewing an locked-down site. Please close this tab!</p>
+    <p>Function Output Lock: kernel-console optimizer<br>- You're viewing a locked-down site. Please close this tab!</p>
     
     <div class="copyright">
         &copy; Folko&trade; 2002 - <span id="currentYear"></span>
@@ -32,3 +38,4 @@
     </script>
 </body>
 </html>
+```
