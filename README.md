@@ -1,4 +1,5 @@
 ```
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -27,8 +28,6 @@
 </head>
 
 <body>
-    <img src="https://anoxle.github.io/folko/logo2.png" alt="Folko Logo" width="200">
-
     <p>Function Output Lock: kernel-console optimizer</p>
 
     <p>You’re viewing a locked-down site. Please close this tab!</p>
