@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Folko | Verify-DVD</title>                                        
+  
+  
+<style>
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+h1 {
+  color: #0d6efd;
+  margin-bottom: 10px;
+}
+
+.btn {
+  background-color: #20c997;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: 1px solid #20c997;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn:hover {
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+}
+
+input[type="text"] {
+  padding: 8px;
+  margin: 10px 0;
+  width: 80%;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+}
+
+small.error {
+  color: red;
+  display: none;
+}
+
+.small-text {
+  font-size: 12px;
+}
+
+.hidden {
+  display: none;
+}
+
+.loading-bar {
+  background-color: #0d6efd;
+  height: 20px;
+  width: 0;
+  transition: width 3s;
+  animation: moveBar 3s linear;
+  margin-top: 10px;
+  overflow: hidden;
+}
+
+@keyframes moveBar {
+  0% { width: 0; }
+  100% { width: 100%; }
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>Verify</h1>
+  <p class="small-text">Powered by Folko</p>
+  <div id="questionBox">
+    <p>What is 2 + 2?</p>
+    <input type="text" id="answerInput">
+    <small class="error" id="emptyError">Please provide an answer.</small>
+    <small class="error" id="wrongError">Wrong answer. Try again.</small>
+    <button class="btn" onclick="submitAnswer()">Submit</button>
+    <div class="loading-bar hidden" id="loadingBar"></div>
+  </div>
+  <div id="codeBox" class="hidden">
+    <p>5Vbg51</p>
+    <button class="btn" onclick="copyCode()">Copy</button>
+  </div>
+</div>
+
+<script>
+var questions = [
+  "What is 3 x 4?",
+  "What is 10 - 5?",
+  "What is 8 / 2?",
+  "What is 5 + 6?",
+  "What is 20 - 8?",
+  "What is 12 / 3?",
+  "What is 4 x 5?",
+  "What is 15 - 7?",
+  "What is 18 / 3?",
+  "What is 9 + 3?"
+];
+
+function submitAnswer() {
+  var answer = document.getElementById("answerInput").value;
+  var emptyError = document.getElementById("emptyError");
+  var wrongError = document.getElementById("wrongError");
+
+  emptyError.style.display = "none";
+  wrongError.style.display = "none";
+
+  if (answer === "") {
+    emptyError.style.display = "block";
+  } else {
+    var correctAnswer = 4;
+    if (parseInt(answer) === correctAnswer) {
+      document.getElementById("questionBox").innerHTML = '<p>Verifying...</p><div class="loading-bar" id="loadingBar"></div>';
+
+      var randomNumber = Math.floor(Math.random() * 10);
+      setTimeout(function() {
+        document.getElementById("questionBox").classList.add("hidden");
+        document.getElementById("codeBox").classList.remove("hidden");
+      }, 3000);
+
+      var loadingBar = document.getElementById("loadingBar");
+      loadingBar.style.width = "100%";
+      loadingBar.classList.remove("hidden");
+    } else {
+      wrongError.style.display = "block";
+    }
+  }
+}
+
+function copyCode() {
+  var code = document.querySelector("#codeBox p").innerText;
+  navigator.clipboard.writeText("DVD-CODE");
+  alert("DVD-CODE copied to your clipboard!");
+  document.querySelector("#codeBox button").textContent = "Recopy";
+}
+</script>
+</body>
+</html>
