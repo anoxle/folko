@@ -1,44 +1,55 @@
-ERROR CODE:
-```C:\Users\FolkoCloud> Site has been locked ```
-
-
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Folko - Bloxstrap</title>
-    <link rel="icon" href="https://anoxle.github.io/hvh/logo.png" type="image/png">
-
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Folko</title>
     <style>
         body {
-            background-color: #222;
-            color: #ddd;
-            font-family: 'Arial', sans-serif;
+            font-family: Tahoma, sans-serif;
+            background-color: #f9f9f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
             text-align: center;
-            padding: 20px;
+            padding: 30px;
+            border-radius: 10px;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            max-width: 400px;
         }
-
+        h1 {
+            font-size: 36px;
+            color: #333;
+            margin-bottom: 10px;
+        }
         p {
-            font-size: 18px;
+            font-size: 16px;
+            color: #555;
+            margin-bottom: 20px;
         }
-
-        footer {
-            margin-top: 20px;
-            font-size: 14px;
-            color: #888;
+        a {
+            color: #007bff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        a:hover {
+            color: #0056b3;
         }
     </style>
 </head>
-
 <body>
-    <p>Function Output Lock: kernel-console optimizer</p>
-
-    <p>You’re viewing a locked-down site. Please close this tab!</p>
-
-    <footer>
-        &copy; 2002 - <span id="currentYear"></span> Folko™. All Rights Reserved.
-    </footer>
-
-    <script>
-        document.getElementById("currentYear").innerHTML = new Date().getFullYear();
-    </script>
+    <div class="container">
+        <h1>Welcome to Folko</h1>
+        <p><strong>Function Output Lock: kernel-console optimizer</strong></p>
+        <p>This site is still building, we'll make it look the best!</p>
+        <p>For now, feel free to play a fun game at <a href="https://roblox.com" target="_blank">Roblox</a></p>
+    </div>
 </body>
 </html>
