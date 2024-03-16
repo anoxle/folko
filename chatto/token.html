@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Token Retriever</title>
+</head>
+<body>
+    <h1>Token Retriever</h1>
+
+    <form id="tokenForm">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <button type="button" onclick="requestToken()">Get Token</button>
+    </form>
+
+    <div id="tokenResult"></div>
+
+    <script>
+        function requestToken() {
+            var password = document.getElementById('password').value;
+
+            fetch('https://anoxle.github.io/excofile/api/get_token.py?password=' + password)
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('tokenResult').textContent = 'Retrieved Token: ' + data;
+                })
+                .catch(err => {
+                    console.error('Error fetching token:', err);
+                });
+        }
+    </script>
+</body>
+</html>
